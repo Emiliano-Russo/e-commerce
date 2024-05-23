@@ -27,4 +27,8 @@ export class UsersService {
   async delete(id: string): Promise<User> {
     return this.userModel.findByIdAndDelete(id).exec();
   }
+
+  async findOneByUsername(username: string): Promise<User | undefined> {
+    return this.userModel.findOne({ username }).exec();
+  }
 }
