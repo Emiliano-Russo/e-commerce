@@ -14,12 +14,9 @@ const AppHeader = () => {
             <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/products">Products</Link>
-          </Menu.Item>
-          <Menu.Item key="3">
             <Link to="/cart">Cart</Link>
           </Menu.Item>
-          <Menu.Item key="4">
+          <Menu.Item key="3">
             <Link to="/login">Login</Link>
           </Menu.Item>
         </Menu>

@@ -18,4 +18,12 @@ export class ProductsService {
     const createdProduct = new this.productModel(createProductDto);
     return createdProduct.save();
   }
+
+  async getProductById(id: string): Promise<Product> {
+    return this.productModel.findById(id).exec();
+  }
+
+  async deleteProduct(id: string): Promise<Product> {
+    return this.productModel.findByIdAndDelete(id).exec();
+  }
 }

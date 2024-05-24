@@ -1,4 +1,5 @@
-export class CreateProductDto {
+export interface Product {
+  readonly _id: string;
   readonly name: string;
   readonly description?: string;
   readonly price: number;
